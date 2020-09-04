@@ -11,11 +11,17 @@ var Cart = function(items) {
 };
 
 Cart.prototype.addItem = function(product, quantity) {
+<<<<<<< HEAD
 new CartItem(product,)
 var newItem = new CartItem([product,quantity]);
   // done: Fill in this instance method to create a new CartItem and add it to this.items
   this.items.push(newItem)
 
+=======
+  var newItem = new CartItem([product, quantity]); 
+  this.items.push(newItem);
+  // DONE: Fill in this instance method to create a new CartItem and add it to this.items
+>>>>>>> 1b1576adde88d0b6f6795974ceb208b81151f422
 };
 
 Cart.prototype.saveToLocalStorage = function() {
