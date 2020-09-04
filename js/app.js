@@ -1,5 +1,6 @@
 'use strict';
 
+
 // Cart constructor.
 var Cart = function(items) {
   // this.items is an array of CartItem instances.
@@ -7,6 +8,7 @@ var Cart = function(items) {
 };
 
 Cart.prototype.addItem = function(product, quantity) {
+  new Cart([product, quantity]);  
   // TODO: Fill in this instance method to create a new CartItem and add it to this.items
 };
 
