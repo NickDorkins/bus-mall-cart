@@ -13,8 +13,14 @@ function populateForm() {
   var selectElement = document.getElementById('items');
   for (var i in Product.allProducts) {
     var newItem = document.createElement('option');
+<<<<<<< HEAD
+    newItem.textContent = `$(Product.allProducts[i].name)`;
+    selectElement.append(newItem);
+
+=======
       newItem.textContent = `${Product.allProducts[i].name}`;
     selectElement.append(newItem);
+>>>>>>> 1b1576adde88d0b6f6795974ceb208b81151f422
   }
 
 }
@@ -23,8 +29,14 @@ function populateForm() {
 // object, save the whole thing back to local storage and update the screen
 // so that it shows the # of items in the cart and a quick preview of the cart itself.
 function handleSubmit(event) {
+<<<<<<< HEAD
+  event.preventDefault();
+  // done: Prevent the page from reloading
+  
+=======
   // DONE: Prevent the page from reloading
   event.preventDefault();
+>>>>>>> 1b1576adde88d0b6f6795974ceb208b81151f422
 
   // Do all the things ...
   addSelectedItemToCart();
@@ -37,8 +49,12 @@ function handleSubmit(event) {
 // TODO: Add the selected item and quantity to the cart
 function addSelectedItemToCart() {
   // TODO: suss out the item picked from the select list
+
+
   // TODO: get the quantity
+
   // TODO: using those, add one item to the Cart
+  //document.getElementById('Banana').selected = true;
 }
 
 // TODO: Update the cart count in the header nav with the number of items in the Cart
